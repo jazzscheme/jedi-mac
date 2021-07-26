@@ -2,5 +2,7 @@
   (export (jazz.opengl.glew.foreign))
   (import (jazz.opengl.glew.foreign))
   (import (jazz.graphic))
+  (definition protected gl-check-error?)
+  (definition protected (gl-set-check-error? flag))
   (definition public (gl-check-error (tag (unspecified))))
   (definition public (gl-colorize color)))

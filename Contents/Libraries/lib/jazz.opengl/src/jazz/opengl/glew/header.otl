@@ -11,7 +11,7 @@
   (hub get-tag)
   (hub get-code)
   (definition public (throw-opengl-error tag code))
-  (definition public (opengl-check-error tag))
+  (definition public (check-opengl-error tag))
   (c-type GLenum unsigned-int)
   (c-type GLenum* (pointer unsigned-int))
   (c-type GLbitfield unsigned-int)

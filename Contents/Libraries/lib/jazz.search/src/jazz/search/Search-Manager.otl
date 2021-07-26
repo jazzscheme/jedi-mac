@@ -30,7 +30,7 @@
     (method public (get-searches self))
     (method package (current-history-item self))
     (method package (install-history-item self item))
-    (method public (edit-definitions self search definitions))
+    (method public (edit-definitions self search definitions (sort?: sort? (unspecified))))
     (method public (edit-references self search references)))
   (hub on-play-recording)
   (hub toggle-play-recording)

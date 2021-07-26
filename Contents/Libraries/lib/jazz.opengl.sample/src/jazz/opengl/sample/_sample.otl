@@ -70,5 +70,4 @@
   (definition public (make-orthographic-matrix! res <matrix> left <fl> right <fl> bottom <fl> top <fl> near <fl> far <fl>) <matrix>)
   (definition public (make-view-matrix! res <matrix> position <vertex> lookat <LookAt>) <matrix>)
   (definition public (plane-normal v1 <vertex> v2 <vertex> v3 <vertex>) <vertex>)
-  (definition public (gl-plane-normal v1 v2 v3))
   (definition public (boot-sample application-class)))

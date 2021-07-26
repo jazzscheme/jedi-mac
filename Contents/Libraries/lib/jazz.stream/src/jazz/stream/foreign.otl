@@ -252,6 +252,8 @@
   (definition public gst_rate_probe_get_allowed)
   (definition public gst_rate_probe_get_dropped$c)
   (definition public gst_rate_probe_get_dropped)
+  (definition public gst_pad_add_voice_probe$c)
+  (definition public gst_pad_add_voice_probe)
   (definition public gst_pad_remove_probe$c)
   (definition public gst_pad_remove_probe)
   (definition public gst_pad_probe_free$c)

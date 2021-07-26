@@ -10,7 +10,7 @@
     (method package (set-replace self repl))
     (method protected (collect-find self))
     (method public (empty? self))
-    (method package virtual (install-results self results-view results categorized?))
+    (method package virtual (install-results self results-view results categorized? (sort?: sort? (unspecified))))
     (method public virtual (get-icon self))
     (method public (present self))
     (method package virtual (supports-drill-down? self))

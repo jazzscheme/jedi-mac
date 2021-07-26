@@ -34,7 +34,7 @@
     (method protected virtual (stop-element self))
     (method protected virtual (release-element self))
     (method protected virtual (process self task exit))
-    (method package virtual (consume-frame self buffer dts pts duration keyframe?))
+    (method package virtual (consume-frame self buffer dts pts duration flags))
     (method package virtual (consume-buffer self buffer)))
   (hub get-name)
   (hub get-state)
@@ -76,11 +76,11 @@
   (class Stream-Sink extends Stream-Element
     (slot consumer accessors generate)
     (method override (initialize self (name: name (unspecified)) (consumer: consumer (unspecified))))
-    (method override (consume-frame self buffer dts pts duration keyframe?)))
+    (method override (consume-frame self buffer dts pts duration flags)))
   (hub get-consumer)
   (hub set-consumer)
   (class Debug-Sink extends Stream-Sink
-    (method override (consume-frame self buffer dts pts duration keyframe?)))
+    (method override (consume-frame self buffer dts pts duration flags)))
   (definition public (pipeline desc))
   (definition public (play-reversed pipeline))
   (class Stream-Pipeline extends Stream-Element
